@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Hospeda Fortaleza</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="navbar-logo" class="borda-vermelha">
+              <img src="">
+            </div>
+            <div id="navbar-usuario" class="borda-vermelha">
+              <img src="../imagens/foto-usuario.png">
+              <p>Entrar</p>
+            </div>
+        </nav>
+    </header>
+
+    <div id="menu-filtro" type="button" id="botaoSelect">      
+        <button class="menu-filtro-campo">
+            <span>
+                <span><img src="../imagens/lupa-pesquisar.png"></span>
+                <span>
+                    <span>Destino</span>
+                    <span>
+                        <select id="destino">
+                            <option value="">Selecione um destino</option>
+                            <option value="salvador">Salvador</option>
+                            <option value="fortaleza">Fortaleza</option>
+                            <option value="recife">Recife</option>
+                            <option value="manaus">Manaus</option>
+                            <option value="hotelA">Hotel A</option>
+                            <option value="hotelB">Hotel B</option>
+                        </select>
+                    </span>
+                </span>
+        </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="campo">
+            <label for="entrada">Entrada</label>
+            <input type="date" id="entrada">
+        </div>
+
+        <div class="campo">
+            <label for="saida">Saída</label>
+            <input type="date" id="saida">
+        </div>
+
+        <div class="campo">
+            <label for="hospedes">Hóspedes</label>
+            <select id="hospedes">
+                <option value="1">1 hóspede</option>
+                <option value="2">2 hóspedes</option>
+                <option value="3">3 hóspedes</option>
+                <option value="4">4 hóspedes</option>
+                <option value="5">5 ou mais</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label for="quartos">Quartos</label>
+            <select id="quartos">
+                <option value="1">1 quarto</option>
+                <option value="2">2 quartos</option>
+                <option value="3">3 quartos</option>
+                <option value="4">4 ou mais</option>
+            </select>
+        </div>
+
+        <div class="campo">
+            <label>&nbsp;</label>
+            <button>Pesquisar</button>
+        </div>
+    </div>
+
+    <main class="borda-vermelha">
+        <div id="lista-hoteis">
+
+        </div>
+    </main>
+    <footer>
+        <div id="footer-topo" class="borda-vermelha">
+            <img src="" id="footer-topo-logo" class="borda-vermelha">
+            <ul id="footer-topo-redes">
+                <li><img src="../imagens/icon-instagram.png"></li>
+                <li><img src="../imagens/icon-youtube.png"></li>
+                <li><img src="../imagens/x-icon.png"></li>
+                <li><img src="../imagens/icon-linkedin.png"></li>
+            </ul>
+        </div>
+        <div id="footer-baixo" class="borda-vermelha">
+            <p>Hospeda Fortaleza®, Avenida Torreon - 1432, Caucaia-CE, Brasil</p>
+            <p>Direitos autorais 2025 Hospeda Fortaleza| Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+    const botao = document.getElementById("botaoSelect");
+    const select = document.getElementById("destino");
+
+    botao.addEventListener("click", (e) => {
+        e.preventDefault(); // impede comportamento padrão do botão
+        select.focus();     // foca no select
+        select.click();     // tenta abrir o select
+    });
+</script>
+</body>
+</html>
